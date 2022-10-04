@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Guneshka"
+  given-names: "Stefani"
+title: "Ontology-based corner case scenario simulation for autonomous driving"
+doi: 10.5445/IR/1000144811
+date-released: 2022-04-20
+url: "https://publikationen.bibliothek.kit.edu/1000144811"
+preferred-citation:
+  type: thesis
+  thesis-type: Bachelor Thesis
+  authors:
+  - family-names: "Guneshka"
+    given-names: "Stefani"
+  doi: "10.5445/IR/1000144811"
+  title: "Ontology-based corner case scenario simulation for autonomous driving"
+  institution:
+  - name: "Karlsruhe Institute of Technology (KIT)" 
+    city: Karlsruhe
+    country: DE
+  year: 2022
