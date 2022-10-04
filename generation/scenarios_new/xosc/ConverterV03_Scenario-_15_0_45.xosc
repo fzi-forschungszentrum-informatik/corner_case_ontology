@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSCENARIO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OpenScenario.xsd">
+    <FileHeader description="indiv_Scenario" author="Stefani" revMajor="1" revMinor="0" date="2022-02-12T15:00:46.041924"/>
+    <ParameterDeclarations/>
+    <CatalogLocations/>
+    <RoadNetwork>
+        <LogicFile filepath="Town04"/>
+    </RoadNetwork>
+    <Entities>
+        <ScenarioObject name="ego_vehicle">
+            <Vehicle name="vehicle.tesla.model3" vehicleCategory="car">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="1.5" y="0.0" z="0.9"/>
+                    <Dimensions width="2.1" length="4.5" height="1.8"/>
+                </BoundingBox>
+                <Performance maxSpeed="69.0" maxDeceleration="200.0" maxAcceleration="10.0"/>
+                <Axles>
+                    <FrontAxle maxSteering="0.523598775598" wheelDiameter="0.8" trackWidth="1.68" positionX="2.98" positionZ="0.4"/>
+                    <RearAxle maxSteering="0.523598775598" wheelDiameter="0.8" trackWidth="1.68" positionX="0.0" positionZ="0.4"/>
+                </Axles>
+                <Properties>
+                    <Property name="type" value="ego_vehicle"/>
+                </Properties>
+            </Vehicle>
+        </ScenarioObject>
+        <ScenarioObject name="indiv__cutInCar">
+            <Vehicle name="vehicle.tesla.model3" vehicleCategory="car">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="10.0" y="10.0" z="10.0"/>
+                    <Dimensions width="10.0" length="10.0" height="10.0"/>
+                </BoundingBox>
+                <Performance maxSpeed="69.0" maxDeceleration="200.0" maxAcceleration="10.0"/>
+                <Axles>
+                    <FrontAxle maxSteering="0.523598775598" wheelDiameter="0.8" trackWidth="1.68" positionX="2.98" positionZ="0.4"/>
+                    <RearAxle maxSteering="0.523598775598" wheelDiameter="0.8" trackWidth="1.68" positionX="0.0" positionZ="0.4"/>
+                </Axles>
+                <Properties>
+                    <Property name="type" value="simulation"/>
+                </Properties>
+            </Vehicle>
+        </ScenarioObject>
+    </Entities>
+    <Storyboard>
+        <Init>
+            <Actions>
+                <GlobalAction>
+                    <EnvironmentAction>
+                        <Environment name="def_environment">
+                            <TimeOfDay animation="false" dateTime="2022-07-01T13:30:30"/>
+                            <Weather cloudState="free">
+                                <Sun azimuth="0" intensity="0.8" elevation="1.3"/>
+                                <Fog visualRange="100">
+                                    <BoundingBox>
+                                        <Center x="10.0" y="10.0" z="10.0"/>
+                                        <Dimensions width="10.0" length="10.0" height="10.0"/>
+                                    </BoundingBox>
+                                </Fog>
+                                <Precipitation precipitationType="dry" intensity="1.0"/>
+                            </Weather>
+                            <RoadCondition frictionScaleFactor="1"/>
+                        </Environment>
+                    </EnvironmentAction>
+                </GlobalAction>
+                <Private entityRef="ego_vehicle">
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="0.0" dynamicsDimension="time"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="16.6666"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="48" laneId="5" s="50.0" offset="0.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <ControllerAction>
+                            <OverrideControllerValueAction>
+                                <Throttle active="false" value="0.0"/>
+                                <Brake active="false" value="0.0"/>
+                                <Clutch active="false" value="0.0"/>
+                                <ParkingBrake active="false" value="0.0"/>
+                                <SteeringWheel active="false" value="0.0"/>
+                                <Gear active="false" number="0.0"/>
+                            </OverrideControllerValueAction>
+                            <AssignControllerAction>
+                                <Controller name="Camera">
+                                    <ParameterDeclarations/>
+                                    <Properties>
+                                        <Property name="module" value="simple_vehicle_control"/>
+                                        <Property name="attach_camera" value="true"/>
+                                    </Properties>
+                                </Controller>
+                            </AssignControllerAction>
+                        </ControllerAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="indiv__cutInCar">
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="0.0" dynamicsDimension="time"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="22.222222"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="49" laneId="5" s="20.0" offset="0.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                </Private>
+            </Actions>
+        </Init>
+        <Story name="indiv_Story">
+            <ParameterDeclarations/>
+            <Act name="indiv_Act">
+                <ManeuverGroup name="indiv_ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="indiv__cutInCar"/>
+                    </Actors>
+                    <Maneuver name="indiv_Maneuver">
+                        <Event name="indiv_CutInEvent" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_CutInRelativeLaneChangeAction">
+                                <PrivateAction>
+                                    <LateralAction>
+                                        <LaneChangeAction targetLaneOffset="0.0">
+                                            <LaneChangeActionDynamics dynamicsShape="step" value="22.0" dynamicsDimension="distance"/>
+                                            <LaneChangeTarget>
+                                                <RelativeTargetLane value="1" entityRef="indiv__cutInCar"/>
+                                            </LaneChangeTarget>
+                                        </LaneChangeAction>
+                                    </LateralAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_RelativeDistanceCondtion" delay="0" conditionEdge="rising">
+                                        <ByEntityCondition>
+                                            <TriggeringEntities triggeringEntitiesRule="any">
+                                                <EntityRef entityRef="indiv__cutInCar"/>
+                                            </TriggeringEntities>
+                                            <EntityCondition>
+                                                <RelativeDistanceCondition value="15" freespace="false" entityRef="ego_vehicle" rule="lessThan" relativeDistanceType="cartesianDistance"/>
+                                            </EntityCondition>
+                                        </ByEntityCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                        <Event name="indiv_CutInLeftEvent" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_LeftRelativeLaneChangeAction">
+                                <PrivateAction>
+                                    <LateralAction>
+                                        <LaneChangeAction targetLaneOffset="0.0">
+                                            <LaneChangeActionDynamics dynamicsShape="step" value="22.0" dynamicsDimension="distance"/>
+                                            <LaneChangeTarget>
+                                                <RelativeTargetLane value="-1" entityRef="indiv__cutInCar"/>
+                                            </LaneChangeTarget>
+                                        </LaneChangeAction>
+                                    </LateralAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_cut_in_eventStoryboardElementStateCondition" delay="0" conditionEdge="none">
+                                        <ByValueCondition>
+                                            <StoryboardElementStateCondition storyboardElementType="event" storyboardElementRef="indiv_CutInEvent" state="completeState"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                    <Condition name="indiv_70TraveledDistanceCondition" delay="0" conditionEdge="none">
+                                        <ByEntityCondition>
+                                            <TriggeringEntities triggeringEntitiesRule="any">
+                                                <EntityRef entityRef="indiv__cutInCar"/>
+                                            </TriggeringEntities>
+                                            <EntityCondition>
+                                                <TraveledDistanceCondition value="70"/>
+                                            </EntityCondition>
+                                        </ByEntityCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                        <Event name="indiv_KeepLongerEvent" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_longerSpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="0.0" dynamicsDimension="time"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="16.6666"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_KeepLongerStoryboardElementStateCondition" delay="5" conditionEdge="none">
+                                        <ByValueCondition>
+                                            <StoryboardElementStateCondition storyboardElementType="event" storyboardElementRef="indiv_CutInLeftEvent" state="completeState"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <StartTrigger>
+                    <ConditionGroup>
+                        <Condition name="indiv_StartRelativeDistanceCondtion" delay="0" conditionEdge="rising">
+                            <ByEntityCondition>
+                                <TriggeringEntities triggeringEntitiesRule="any">
+                                    <EntityRef entityRef="indiv__cutInCar"/>
+                                </TriggeringEntities>
+                                <EntityCondition>
+                                    <RelativeDistanceCondition value="17" freespace="false" entityRef="ego_vehicle" rule="lessThan" relativeDistanceType="cartesianDistance"/>
+                                </EntityCondition>
+                            </ByEntityCondition>
+                        </Condition>
+                    </ConditionGroup>
+                </StartTrigger>
+                <StopTrigger>
+                    <ConditionGroup>
+                        <Condition name="indiv_30SimulationTimeCondition" delay="0" conditionEdge="rising">
+                            <ByValueCondition>
+                                <SimulationTimeCondition value="30" rule="greaterThan"/>
+                            </ByValueCondition>
+                        </Condition>
+                    </ConditionGroup>
+                </StopTrigger>
+            </Act>
+        </Story>
+        <StopTrigger/>
+    </Storyboard>
+</OpenSCENARIO>

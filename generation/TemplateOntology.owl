@@ -1,0 +1,2938 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/stefi/ontologies/2021/10/21/untitled-ontology-56"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/stefi/ontologies/2021/10/21/untitled-ontology-56">
+    <Prefix name="" IRI="http://www.semanticweb.org/stefi/ontologies/2021/10/21/untitled-ontology-56"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-56" IRI="http://www.semanticweb.org/stefi/ontologies/2021/10/21/untitled-ontology-56#"/>
+    <Declaration>
+        <Class IRI="#Act"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnomalousScenario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssignControllerAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BeamBased"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bicycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BicycleAssets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoundingBox"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ByEntityCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ByValueCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarAssets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CatalogLocations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CloudState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CollectiveAnomaly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConditionEdge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConditionGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConditionProperties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConditionRule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContentLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContextualAnomaly"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CornerCase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainShift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DynamicsDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DynamicsShapes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EgoVehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EntityAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EntityTrigger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentElements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlobalAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HardwareLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Init"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaneChangeAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LaserError"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maneuver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManeuverGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Misc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NovelScenario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjectLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orientation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OtherConstants"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParameterDeclarations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pedestrian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PedestrianAssets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Position"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Positions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Precipitation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrecipitationType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Priority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivateAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelativeDistanceCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelativeDistanceType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelativeLaneChangeAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelativeObjectPosition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelativeSpeedCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskyScenario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoadCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoadNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scenario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScenarioElements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScenarioLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SceneLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensorLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SimulationTimeCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpeedAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StartTrigger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#State"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StopTrigger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Story"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Storyboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StoryboardElementStateCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StoryboardElements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sun"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeleportAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemporalLayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeOfDay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Town"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransitionDynamics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransitionDynamicsProperties"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TraveledDistanceCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Triggers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValueTrigger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeatherProperties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#condition_properties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#environment_properties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#event_properties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_act"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_action"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_asset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_bounding_box"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_cloud_state"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_condition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_condition_edge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_condition_group"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_condition_rule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_dynamics_dimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_dynamics_shape"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_entity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_entity_ref"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_environment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_fog"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_init"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_init_action"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_maneuver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_maneuver_group"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_orientation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_position"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_precipitation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_precipitation_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_priority"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_relative_distance_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_relative_position_object_reference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_road_condition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_road_network"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_start_trigger"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_state"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_stop_trigger"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_story"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_storyboard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_storyboard_element_ref"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_storyboard_element_type"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_sun"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_target_reference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_time_of_day"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_town"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_transition_dynamics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_weather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#main_part_properties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#multi_domain_properties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relative_distance_condition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#scenario_properties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#storyboard_element_state_condition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transition_dynamics_properties"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weather_properties"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bounding_box_properties"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fog_properties"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_animation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_azimuth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_condition_speed_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_day"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_delay"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_distance_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_elevation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_friction_scale_factor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_heading"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_heigth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_hour"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_intensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_lane_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_length"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_maximumExecutionCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_minute"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_month"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_offset"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_pitch"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_road_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_roll"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_s"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_second"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_simulation_time_condition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_target_lane_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_target_speed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_traveled_distance_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_visual_range"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_width"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_x"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_x_center"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_y"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_y_center"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_year"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_z"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#has_z_center"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#precipitation_properties"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#road_condition_properties"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#sun_properties"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#time_of_day_properties"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Town01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Town02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Town03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Town04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cartesianDistance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cloudy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#completeState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cubic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#def_env_action"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#def_environment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#def_fog"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#def_fog_bounding_box"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#def_precipitation_dry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#def_road_condition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#def_sun"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#def_time_of_day"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#def_weather_sunny"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#distance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ego_tesla_bounding_box"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ego_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#endTransition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#equalTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#euclidianDistance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#falling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#free"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#greaterOrEqual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#greaterThan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lateral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lessEqual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lessThan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#linear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#longitudinal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#none"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#notEqualTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#overcast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#overwrite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#parallel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rainy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#rising"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#risingOrFalling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#runningState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sinusoidal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#skip"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#skyOff"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#snow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#standbyState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#startTransition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#step"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stopTransition"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#time"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vehicle.diamondback.century"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vehicle.tesla.model3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vehicle.volkswagen.t2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vehicle_volkswagen_t2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#walker.pedestrian.0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#walker.pedestrian.0002"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Act"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#has_maneuver_group"/>
+                <Class IRI="#ManeuverGroup"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#has_stop_trigger"/>
+                <Class IRI="#StopTrigger"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ConditionGroup"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_condition"/>
+            <Class IRI="#Condition"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Environment"/>
+        <ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_road_condition"/>
+                <Class IRI="#RoadCondition"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_time_of_day"/>
+                <Class IRI="#TimeOfDay"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_weather"/>
+                <Class IRI="#Weather"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Event"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#has_action"/>
+                <Class IRI="#Action"/>
+            </ObjectMinCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_priority"/>
+                <Class IRI="#Priority"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_start_trigger"/>
+                <Class IRI="#StartTrigger"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Init"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#has_init_action"/>
+                <Class IRI="#EnvironmentAction"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#has_init_action"/>
+                <Class IRI="#SpeedAction"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#has_init_action"/>
+                <Class IRI="#TeleportAction"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Maneuver"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_event"/>
+            <Class IRI="#Event"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Precipitation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has_precipitation_type"/>
+            <Class IRI="#PrecipitationType"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RelativeObjectPosition"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#has_relative_position_object_reference"/>
+            <Class IRI="#Entities"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Scenario"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#has_entity"/>
+                <Class IRI="#Entities"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#has_entity"/>
+                <Class IRI="#EgoVehicle"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#has_storyboard"/>
+                <Class IRI="#Storyboard"/>
+            </ObjectMinCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_town"/>
+                <Class IRI="#Town"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Story"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_act"/>
+            <Class IRI="#Act"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Storyboard"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#has_story"/>
+                <Class IRI="#Story"/>
+            </ObjectMinCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_init"/>
+                <Class IRI="#Init"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_stop_trigger"/>
+                <Class IRI="#StopTrigger"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TeleportAction"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#has_orientation"/>
+                <Class IRI="#Orientation"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#has_position"/>
+                <Class IRI="#Position"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TransitionDynamics"/>
+        <ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_dynamics_dimension"/>
+                <Class IRI="#DynamicsDimension"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_dynamics_shape"/>
+                <Class IRI="#DynamicsShapes"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Weather"/>
+        <ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_cloud_state"/>
+                <Class IRI="#CloudState"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_fog"/>
+                <Class IRI="#Fog"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_precipitation"/>
+                <Class IRI="#Precipitation"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#has_sun"/>
+                <Class IRI="#Sun"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AnomalousScenario"/>
+        <Class IRI="#ScenarioLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssignControllerAction"/>
+        <Class IRI="#PrivateAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeamBased"/>
+        <Class IRI="#PhysicalLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle"/>
+        <Class IRI="#Entities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BicycleAssets"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoundingBox"/>
+        <Class IRI="#OtherConstants"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ByEntityCondition"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ByValueCondition"/>
+        <Class IRI="#Condition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarAssets"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CatalogLocations"/>
+        <Class IRI="#ScenarioElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CloudState"/>
+        <Class IRI="#WeatherProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CollectiveAnomaly"/>
+        <Class IRI="#SceneLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConditionEdge"/>
+        <Class IRI="#ConditionProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConditionProperties"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConditionRule"/>
+        <Class IRI="#ConditionProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContentLayer"/>
+        <Class IRI="#CornerCase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContextualAnomaly"/>
+        <Class IRI="#SceneLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomainLevel"/>
+        <Class IRI="#ContentLayer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomainShift"/>
+        <Class IRI="#DomainLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DynamicsDimension"/>
+        <Class IRI="#TransitionDynamicsProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DynamicsShapes"/>
+        <Class IRI="#TransitionDynamicsProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EgoVehicle"/>
+        <Class IRI="#Entities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Entities"/>
+        <Class IRI="#ScenarioElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EntityAction"/>
+        <Class IRI="#GlobalAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EntityTrigger"/>
+        <Class IRI="#Triggers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentAction"/>
+        <Class IRI="#GlobalAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fog"/>
+        <Class IRI="#WeatherProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlobalAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HardwareLevel"/>
+        <Class IRI="#SensorLayer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Init"/>
+        <Class IRI="#StoryboardElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaneChangeAction"/>
+        <Class IRI="#PrivateAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LaserError"/>
+        <Class IRI="#HardwareLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Misc"/>
+        <Class IRI="#Entities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NovelScenario"/>
+        <Class IRI="#ScenarioLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjectLevel"/>
+        <Class IRI="#ContentLayer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orientation"/>
+        <Class IRI="#Positions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParameterDeclarations"/>
+        <Class IRI="#ScenarioElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pedestrian"/>
+        <Class IRI="#Entities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PedestrianAssets"/>
+        <Class IRI="#Asset"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalLevel"/>
+        <Class IRI="#SensorLayer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Position"/>
+        <Class IRI="#Positions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Precipitation"/>
+        <Class IRI="#WeatherProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrecipitationType"/>
+        <Class IRI="#OtherConstants"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Priority"/>
+        <Class IRI="#OtherConstants"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrivateAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelativeDistanceCondition"/>
+        <Class IRI="#ByEntityCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelativeDistanceType"/>
+        <Class IRI="#OtherConstants"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelativeLaneChangeAction"/>
+        <Class IRI="#PrivateAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelativeObjectPosition"/>
+        <Class IRI="#Positions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelativeSpeedCondition"/>
+        <Class IRI="#ByEntityCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiskyScenario"/>
+        <Class IRI="#ScenarioLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoadCondition"/>
+        <Class IRI="#EnvironmentElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoadNetwork"/>
+        <Class IRI="#ScenarioElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScenarioLevel"/>
+        <Class IRI="#TemporalLayer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SceneLevel"/>
+        <Class IRI="#ContentLayer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensorLayer"/>
+        <Class IRI="#CornerCase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SimulationTimeCondition"/>
+        <Class IRI="#ByValueCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpeedAction"/>
+        <Class IRI="#PrivateAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StartTrigger"/>
+        <Class IRI="#Triggers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StartTrigger"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_condition_group"/>
+            <Class IRI="#ConditionGroup"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#State"/>
+        <Class IRI="#OtherConstants"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StopTrigger"/>
+        <Class IRI="#Triggers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StopTrigger"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#has_condition_group"/>
+            <Class IRI="#ConditionGroup"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Story"/>
+        <Class IRI="#StoryboardElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Storyboard"/>
+        <Class IRI="#ScenarioElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StoryboardElementStateCondition"/>
+        <Class IRI="#ByValueCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sun"/>
+        <Class IRI="#WeatherProperties"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeleportAction"/>
+        <Class IRI="#PrivateAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemporalLayer"/>
+        <Class IRI="#CornerCase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeOfDay"/>
+        <Class IRI="#EnvironmentElements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Town"/>
+        <Class IRI="#OtherConstants"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TraveledDistanceCondition"/>
+        <Class IRI="#ByEntityCondition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ValueTrigger"/>
+        <Class IRI="#Triggers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#Entities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weather"/>
+        <Class IRI="#EnvironmentElements"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AnomalousScenario"/>
+        <Class IRI="#NovelScenario"/>
+        <Class IRI="#RiskyScenario"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BicycleAssets"/>
+        <Class IRI="#CarAssets"/>
+        <Class IRI="#PedestrianAssets"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CollectiveAnomaly"/>
+        <Class IRI="#ContextualAnomaly"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ContentLayer"/>
+        <Class IRI="#SensorLayer"/>
+        <Class IRI="#TemporalLayer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DomainLevel"/>
+        <Class IRI="#ObjectLevel"/>
+        <Class IRI="#SceneLevel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EntityAction"/>
+        <Class IRI="#EnvironmentAction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HardwareLevel"/>
+        <Class IRI="#PhysicalLevel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#StartTrigger"/>
+        <Class IRI="#StopTrigger"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Town"/>
+        <NamedIndividual IRI="#Town01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Town"/>
+        <NamedIndividual IRI="#Town02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Town"/>
+        <NamedIndividual IRI="#Town03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Town"/>
+        <NamedIndividual IRI="#Town04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RelativeDistanceType"/>
+        <NamedIndividual IRI="#cartesianDistance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CloudState"/>
+        <NamedIndividual IRI="#cloudy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#completeState"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DynamicsShapes"/>
+        <NamedIndividual IRI="#cubic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EnvironmentAction"/>
+        <NamedIndividual IRI="#def_env_action"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Environment"/>
+        <NamedIndividual IRI="#def_environment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fog"/>
+        <NamedIndividual IRI="#def_fog"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoundingBox"/>
+        <NamedIndividual IRI="#def_fog_bounding_box"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Precipitation"/>
+        <NamedIndividual IRI="#def_precipitation_dry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RoadCondition"/>
+        <NamedIndividual IRI="#def_road_condition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sun"/>
+        <NamedIndividual IRI="#def_sun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TimeOfDay"/>
+        <NamedIndividual IRI="#def_time_of_day"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weather"/>
+        <NamedIndividual IRI="#def_weather_sunny"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DynamicsDimension"/>
+        <NamedIndividual IRI="#distance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrecipitationType"/>
+        <NamedIndividual IRI="#dry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoundingBox"/>
+        <NamedIndividual IRI="#ego_tesla_bounding_box"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EgoVehicle"/>
+        <NamedIndividual IRI="#ego_vehicle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#endTransition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConditionRule"/>
+        <NamedIndividual IRI="#equalTo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RelativeDistanceType"/>
+        <NamedIndividual IRI="#euclidianDistance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConditionEdge"/>
+        <NamedIndividual IRI="#falling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CloudState"/>
+        <NamedIndividual IRI="#free"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConditionRule"/>
+        <NamedIndividual IRI="#greaterOrEqual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConditionRule"/>
+        <NamedIndividual IRI="#greaterThan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RelativeDistanceType"/>
+        <NamedIndividual IRI="#lateral"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConditionRule"/>
+        <NamedIndividual IRI="#lessEqual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConditionRule"/>
+        <NamedIndividual IRI="#lessThan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DynamicsShapes"/>
+        <NamedIndividual IRI="#linear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RelativeDistanceType"/>
+        <NamedIndividual IRI="#longitudinal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConditionEdge"/>
+        <NamedIndividual IRI="#none"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConditionRule"/>
+        <NamedIndividual IRI="#notEqualTo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CloudState"/>
+        <NamedIndividual IRI="#overcast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Priority"/>
+        <NamedIndividual IRI="#overwrite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Priority"/>
+        <NamedIndividual IRI="#parallel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrecipitationType"/>
+        <NamedIndividual IRI="#rain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CloudState"/>
+        <NamedIndividual IRI="#rainy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DynamicsDimension"/>
+        <NamedIndividual IRI="#rate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConditionEdge"/>
+        <NamedIndividual IRI="#rising"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ConditionEdge"/>
+        <NamedIndividual IRI="#risingOrFalling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#runningState"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DynamicsShapes"/>
+        <NamedIndividual IRI="#sinusoidal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Priority"/>
+        <NamedIndividual IRI="#skip"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CloudState"/>
+        <NamedIndividual IRI="#skyOff"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PrecipitationType"/>
+        <NamedIndividual IRI="#snow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#standbyState"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#startTransition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DynamicsShapes"/>
+        <NamedIndividual IRI="#step"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#State"/>
+        <NamedIndividual IRI="#stopTransition"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DynamicsDimension"/>
+        <NamedIndividual IRI="#time"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BicycleAssets"/>
+        <NamedIndividual IRI="#vehicle.diamondback.century"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CarAssets"/>
+        <NamedIndividual IRI="#vehicle.tesla.model3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CarAssets"/>
+        <NamedIndividual IRI="#vehicle.volkswagen.t2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Asset"/>
+        <NamedIndividual IRI="#vehicle_volkswagen_t2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PedestrianAssets"/>
+        <NamedIndividual IRI="#walker.pedestrian.0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PedestrianAssets"/>
+        <NamedIndividual IRI="#walker.pedestrian.0002"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_environment"/>
+        <NamedIndividual IRI="#def_env_action"/>
+        <NamedIndividual IRI="#def_environment"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_road_condition"/>
+        <NamedIndividual IRI="#def_environment"/>
+        <NamedIndividual IRI="#def_road_condition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_time_of_day"/>
+        <NamedIndividual IRI="#def_environment"/>
+        <NamedIndividual IRI="#def_time_of_day"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_weather"/>
+        <NamedIndividual IRI="#def_environment"/>
+        <NamedIndividual IRI="#def_weather_sunny"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_bounding_box"/>
+        <NamedIndividual IRI="#def_fog"/>
+        <NamedIndividual IRI="#def_fog_bounding_box"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_precipitation_type"/>
+        <NamedIndividual IRI="#def_precipitation_dry"/>
+        <NamedIndividual IRI="#dry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_cloud_state"/>
+        <NamedIndividual IRI="#def_weather_sunny"/>
+        <NamedIndividual IRI="#free"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_fog"/>
+        <NamedIndividual IRI="#def_weather_sunny"/>
+        <NamedIndividual IRI="#def_fog"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_precipitation"/>
+        <NamedIndividual IRI="#def_weather_sunny"/>
+        <NamedIndividual IRI="#def_precipitation_dry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_sun"/>
+        <NamedIndividual IRI="#def_weather_sunny"/>
+        <NamedIndividual IRI="#def_sun"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_asset"/>
+        <NamedIndividual IRI="#ego_vehicle"/>
+        <NamedIndividual IRI="#vehicle.tesla.model3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#has_bounding_box"/>
+        <NamedIndividual IRI="#ego_vehicle"/>
+        <NamedIndividual IRI="#ego_tesla_bounding_box"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_visual_range"/>
+        <NamedIndividual IRI="#def_fog"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_heigth"/>
+        <NamedIndividual IRI="#def_fog_bounding_box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_length"/>
+        <NamedIndividual IRI="#def_fog_bounding_box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_width"/>
+        <NamedIndividual IRI="#def_fog_bounding_box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_x_center"/>
+        <NamedIndividual IRI="#def_fog_bounding_box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_y_center"/>
+        <NamedIndividual IRI="#def_fog_bounding_box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_z_center"/>
+        <NamedIndividual IRI="#def_fog_bounding_box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_intensity"/>
+        <NamedIndividual IRI="#def_precipitation_dry"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_friction_scale_factor"/>
+        <NamedIndividual IRI="#def_road_condition"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_azimuth"/>
+        <NamedIndividual IRI="#def_sun"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_elevation"/>
+        <NamedIndividual IRI="#def_sun"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_intensity"/>
+        <NamedIndividual IRI="#def_sun"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_animation"/>
+        <NamedIndividual IRI="#def_time_of_day"/>
+        <Literal>false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_day"/>
+        <NamedIndividual IRI="#def_time_of_day"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_hour"/>
+        <NamedIndividual IRI="#def_time_of_day"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_minute"/>
+        <NamedIndividual IRI="#def_time_of_day"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_month"/>
+        <NamedIndividual IRI="#def_time_of_day"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_second"/>
+        <NamedIndividual IRI="#def_time_of_day"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_year"/>
+        <NamedIndividual IRI="#def_time_of_day"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2022</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_heigth"/>
+        <NamedIndividual IRI="#ego_tesla_bounding_box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_length"/>
+        <NamedIndividual IRI="#ego_tesla_bounding_box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_width"/>
+        <NamedIndividual IRI="#ego_tesla_bounding_box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_x_center"/>
+        <NamedIndividual IRI="#ego_tesla_bounding_box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_y_center"/>
+        <NamedIndividual IRI="#ego_tesla_bounding_box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#has_z_center"/>
+        <NamedIndividual IRI="#ego_tesla_bounding_box"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.9</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#condition_properties"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#environment_properties"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#event_properties"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_act"/>
+        <ObjectProperty IRI="#main_part_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_action"/>
+        <ObjectProperty IRI="#event_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_asset"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_bounding_box"/>
+        <ObjectProperty IRI="#multi_domain_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_cloud_state"/>
+        <ObjectProperty IRI="#weather_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_condition"/>
+        <ObjectProperty IRI="#condition_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_condition_edge"/>
+        <ObjectProperty IRI="#condition_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_condition_group"/>
+        <ObjectProperty IRI="#condition_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_condition_rule"/>
+        <ObjectProperty IRI="#condition_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_dynamics_dimension"/>
+        <ObjectProperty IRI="#transition_dynamics_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_dynamics_shape"/>
+        <ObjectProperty IRI="#transition_dynamics_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_entity"/>
+        <ObjectProperty IRI="#scenario_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_entity_ref"/>
+        <ObjectProperty IRI="#multi_domain_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_environment"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_event"/>
+        <ObjectProperty IRI="#main_part_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_fog"/>
+        <ObjectProperty IRI="#weather_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_init"/>
+        <ObjectProperty IRI="#main_part_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_init_action"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_maneuver"/>
+        <ObjectProperty IRI="#main_part_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_maneuver_group"/>
+        <ObjectProperty IRI="#main_part_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_orientation"/>
+        <ObjectProperty IRI="#multi_domain_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_position"/>
+        <ObjectProperty IRI="#multi_domain_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_precipitation"/>
+        <ObjectProperty IRI="#weather_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_precipitation_type"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_priority"/>
+        <ObjectProperty IRI="#event_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_relative_distance_type"/>
+        <ObjectProperty IRI="#relative_distance_condition"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_relative_position_object_reference"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_road_condition"/>
+        <ObjectProperty IRI="#environment_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_road_network"/>
+        <ObjectProperty IRI="#scenario_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_start_trigger"/>
+        <ObjectProperty IRI="#multi_domain_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_state"/>
+        <ObjectProperty IRI="#storyboard_element_state_condition"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_stop_trigger"/>
+        <ObjectProperty IRI="#multi_domain_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_story"/>
+        <ObjectProperty IRI="#main_part_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_storyboard"/>
+        <ObjectProperty IRI="#main_part_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_storyboard"/>
+        <ObjectProperty IRI="#scenario_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_storyboard_element_ref"/>
+        <ObjectProperty IRI="#storyboard_element_state_condition"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_storyboard_element_type"/>
+        <ObjectProperty IRI="#storyboard_element_state_condition"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_sun"/>
+        <ObjectProperty IRI="#weather_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_target_reference"/>
+        <ObjectProperty IRI="#relative_distance_condition"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_time_of_day"/>
+        <ObjectProperty IRI="#environment_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_town"/>
+        <ObjectProperty IRI="#scenario_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_transition_dynamics"/>
+        <ObjectProperty IRI="#transition_dynamics_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_weather"/>
+        <ObjectProperty IRI="#environment_properties"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#main_part_properties"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#multi_domain_properties"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#relative_distance_condition"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#scenario_properties"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#storyboard_element_state_condition"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#transition_dynamics_properties"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#weather_properties"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_act"/>
+        <Class IRI="#Story"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_action"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_asset"/>
+        <Class IRI="#Entities"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_bounding_box"/>
+        <ObjectUnionOf>
+            <Class IRI="#Bicycle"/>
+            <Class IRI="#EgoVehicle"/>
+            <Class IRI="#Fog"/>
+            <Class IRI="#Pedestrian"/>
+            <Class IRI="#Vehicle"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_cloud_state"/>
+        <Class IRI="#Weather"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_condition"/>
+        <Class IRI="#ConditionGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_condition_edge"/>
+        <Class IRI="#Condition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_condition_group"/>
+        <ObjectUnionOf>
+            <Class IRI="#StartTrigger"/>
+            <Class IRI="#StopTrigger"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_condition_rule"/>
+        <Class IRI="#Condition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_dynamics_dimension"/>
+        <Class IRI="#TransitionDynamics"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_dynamics_shape"/>
+        <Class IRI="#TransitionDynamics"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_entity"/>
+        <Class IRI="#Scenario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_entity_ref"/>
+        <ObjectUnionOf>
+            <Class IRI="#Action"/>
+            <Class IRI="#ManeuverGroup"/>
+            <Class IRI="#Position"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_environment"/>
+        <Class IRI="#EnvironmentAction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_event"/>
+        <Class IRI="#Maneuver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_fog"/>
+        <Class IRI="#Weather"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_init"/>
+        <Class IRI="#Storyboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_init_action"/>
+        <Class IRI="#Init"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_maneuver"/>
+        <Class IRI="#ManeuverGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_maneuver_group"/>
+        <Class IRI="#Act"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_orientation"/>
+        <Class IRI="#Position"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_position"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_precipitation"/>
+        <Class IRI="#Weather"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_precipitation_type"/>
+        <Class IRI="#Precipitation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_priority"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_relative_distance_type"/>
+        <Class IRI="#RelativeDistanceCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_relative_position_object_reference"/>
+        <Class IRI="#RelativeObjectPosition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_road_condition"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_road_network"/>
+        <Class IRI="#Scenario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_start_trigger"/>
+        <ObjectUnionOf>
+            <Class IRI="#Act"/>
+            <Class IRI="#Event"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_state"/>
+        <Class IRI="#StoryboardElementStateCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_stop_trigger"/>
+        <ObjectUnionOf>
+            <Class IRI="#Act"/>
+            <Class IRI="#Story"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_story"/>
+        <Class IRI="#Storyboard"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_storyboard"/>
+        <Class IRI="#Scenario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_storyboard_element_ref"/>
+        <Class IRI="#StoryboardElementStateCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_storyboard_element_type"/>
+        <Class IRI="#StoryboardElementStateCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_sun"/>
+        <Class IRI="#Weather"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_target_reference"/>
+        <Class IRI="#RelativeDistanceCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_time_of_day"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_town"/>
+        <Class IRI="#Scenario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_transition_dynamics"/>
+        <ObjectUnionOf>
+            <Class IRI="#RelativeLaneChangeAction"/>
+            <Class IRI="#SpeedAction"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_weather"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#storyboard_element_state_condition"/>
+        <Class IRI="#StoryboardElementStateCondition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_act"/>
+        <Class IRI="#Act"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_action"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_asset"/>
+        <Class IRI="#Asset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_bounding_box"/>
+        <Class IRI="#BoundingBox"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_cloud_state"/>
+        <Class IRI="#CloudState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_condition"/>
+        <Class IRI="#Condition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_condition_edge"/>
+        <Class IRI="#ConditionEdge"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_condition_group"/>
+        <Class IRI="#ConditionGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_condition_rule"/>
+        <Class IRI="#ConditionRule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_dynamics_dimension"/>
+        <Class IRI="#DynamicsDimension"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_dynamics_shape"/>
+        <Class IRI="#DynamicsShapes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_entity"/>
+        <Class IRI="#Entities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_entity_ref"/>
+        <Class IRI="#Entities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_environment"/>
+        <Class IRI="#Environment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_event"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_fog"/>
+        <Class IRI="#Fog"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_init"/>
+        <Class IRI="#Init"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_init_action"/>
+        <ObjectUnionOf>
+            <Class IRI="#EnvironmentAction"/>
+            <Class IRI="#SpeedAction"/>
+            <Class IRI="#TeleportAction"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_maneuver"/>
+        <Class IRI="#Maneuver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_maneuver_group"/>
+        <Class IRI="#ManeuverGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_orientation"/>
+        <Class IRI="#Orientation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_position"/>
+        <Class IRI="#Position"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_precipitation"/>
+        <Class IRI="#Precipitation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_precipitation_type"/>
+        <Class IRI="#PrecipitationType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_priority"/>
+        <Class IRI="#Priority"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_relative_distance_type"/>
+        <Class IRI="#RelativeDistanceType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_relative_position_object_reference"/>
+        <Class IRI="#Entities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_road_condition"/>
+        <Class IRI="#RoadCondition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_road_network"/>
+        <Class IRI="#RoadNetwork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_start_trigger"/>
+        <Class IRI="#StartTrigger"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_state"/>
+        <Class IRI="#State"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_stop_trigger"/>
+        <Class IRI="#StopTrigger"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_story"/>
+        <Class IRI="#Story"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_storyboard"/>
+        <Class IRI="#Storyboard"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_storyboard_element_ref"/>
+        <Class IRI="#Entities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_sun"/>
+        <Class IRI="#Sun"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_target_reference"/>
+        <Class IRI="#Entities"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_time_of_day"/>
+        <Class IRI="#TimeOfDay"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_town"/>
+        <Class IRI="#Town"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_transition_dynamics"/>
+        <Class IRI="#TransitionDynamics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_weather"/>
+        <Class IRI="#Weather"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#bounding_box_properties"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fog_properties"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_animation"/>
+        <DataProperty IRI="#time_of_day_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_azimuth"/>
+        <DataProperty IRI="#sun_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_condition_speed_value"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_day"/>
+        <DataProperty IRI="#time_of_day_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_delay"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_distance_value"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_elevation"/>
+        <DataProperty IRI="#sun_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_friction_scale_factor"/>
+        <DataProperty IRI="#road_condition_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_heading"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_heigth"/>
+        <DataProperty IRI="#bounding_box_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_hour"/>
+        <DataProperty IRI="#time_of_day_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_intensity"/>
+        <DataProperty IRI="#precipitation_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_intensity"/>
+        <DataProperty IRI="#sun_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_lane_id"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_length"/>
+        <DataProperty IRI="#bounding_box_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_maximumExecutionCount"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_minute"/>
+        <DataProperty IRI="#time_of_day_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_month"/>
+        <DataProperty IRI="#time_of_day_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_pitch"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_road_id"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_roll"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_second"/>
+        <DataProperty IRI="#time_of_day_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_simulation_time_condition"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_target_lane_id"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_target_speed"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_traveled_distance_value"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_visual_range"/>
+        <DataProperty IRI="#fog_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_width"/>
+        <DataProperty IRI="#bounding_box_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_x"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_x_center"/>
+        <DataProperty IRI="#bounding_box_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_y"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_y_center"/>
+        <DataProperty IRI="#bounding_box_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_year"/>
+        <DataProperty IRI="#time_of_day_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_z"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#has_z_center"/>
+        <DataProperty IRI="#bounding_box_properties"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#precipitation_properties"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#road_condition_properties"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#sun_properties"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#time_of_day_properties"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_delay"/>
+        <Class IRI="#Condition"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_heigth"/>
+        <Class IRI="#BoundingBox"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_lane_id"/>
+        <Class IRI="#Position"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_length"/>
+        <Class IRI="#BoundingBox"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_maximumExecutionCount"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_offset"/>
+        <Class IRI="#Position"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_s"/>
+        <Class IRI="#Position"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_target_speed"/>
+        <Class IRI="#SpeedAction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_width"/>
+        <Class IRI="#BoundingBox"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_x_center"/>
+        <Class IRI="#BoundingBox"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_y_center"/>
+        <Class IRI="#BoundingBox"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#has_z_center"/>
+        <Class IRI="#BoundingBox"/>
+    </DataPropertyDomain>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Act</IRI>
+        <Literal>A container for maneuver groups. Can be executed several times depending on the user provided settings. New executions are only allowed to start when all contained maneuver groups are in the complete state.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Act</IRI>
+        <Literal>Defines the acts of the story.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bicycle</IRI>
+        <Literal>Used for cyclist assets and to represent a cyclics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BoundingBox</IRI>
+        <Literal>For Assets or Fog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ByEntityCondition</IRI>
+        <Literal>A condition that refers to an entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ByEntityCondition</IRI>
+        <Literal>ByEntityConditions will use the states of instances of Entity to perform the conditional evaluation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ByEntityCondition</IRI>
+        <Literal>example: entity &quot;Car1&quot; has reached laneId 1 roadId 0 s 20</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ByValueCondition</IRI>
+        <Literal>A condition that refers to a runtime value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ByValueCondition</IRI>
+        <Literal>ByValueConditions represent logical expressions that are dependent on values not directly related to instances of Entity. For example, these can be scenario states, times or traffic signal information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ByValueCondition</IRI>
+        <Literal>example: SimulationTime is greater than 5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Condition</IRI>
+        <Literal>A condition represents a set of logical expressions that evaluate the relationship of values provided by the user. These values may be entity states, scenario properties, scenario states or external signals. Conditions are the main components in triggers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConditionEdge</IRI>
+        <Literal>Specifies the edge when the condition is evaluated to true (rising, falling, none).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConditionEdge</IRI>
+        <Literal>falling :	A condition defined with a falling edge shall return true at discrete time t if its logical expression is false at discrete time t and its logical expression was true at discrete time t-ts, where ts is the simulation sampling time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConditionEdge</IRI>
+        <Literal>none 	: A condition defined with a &apos;none&apos; edge shall return true at discrete time t if its logical expression is true at discrete time t.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConditionEdge</IRI>
+        <Literal>rising 	: A condition defined with a rising edge shall return true at discrete time t if its logical expression is true at discrete time t and its logical expression was false at discrete time t-ts, where ts is the simulation sampling time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConditionEdge</IRI>
+        <Literal>risingOrFalling 	: A condition defined with a &apos;risingOrFalling&apos; edge shall return true at discrete time t if its logical expression is true at discrete time t and its logical expression was false at discrete time t-ts OR if its logical expression is false at discrete time t and its logical expression was true at discrete time t-ts. ts is the simulation sampling time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConditionGroup</IRI>
+        <Literal>A condition group is an association of conditions that is assessed during simulation time and signals true when all associated conditions are evaluated to true.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConditionRule</IRI>
+        <Literal>Rules (operators) used to compare quantitative variables or signals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EgoVehicle</IRI>
+        <Literal>The EgoVehicle in the Scenario.
+ego_vehicle is the default individual. used as an agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Entities</IRI>
+        <Literal>Definition of entities (scenario objects or entity selections) in a scenario.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Event</IRI>
+        <Literal>Container for Actions. Its priority settings determine how to interact with other events within the same scope (maneuver).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Init</IRI>
+        <Literal>Defines the actions which are executed during the initialization phase of a scenario.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Maneuver</IRI>
+        <Literal>A container for Events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Maneuver</IRI>
+        <Literal>Maneuver type definitions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ManeuverGroup</IRI>
+        <Literal>A list of maneuver groups representing the act.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ManeuverGroup</IRI>
+        <Literal>Grouping element connecting a set of actors to a set maneuvers. Multiple maneuver groups can run independently in parallel. Maneuvers can be defined or instantiated from a maneuver type in a catalog.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ManeuverGroup</IRI>
+        <Literal>has actors(min 0),
+has CatalogReference (min 0)
+has Maneveur(min 0)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Misc</IRI>
+        <Literal>Used for static objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Orientation</IRI>
+        <Literal>Used for Teleport Actions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pedestrian</IRI>
+        <Literal>Used for pedestrian assets</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Priority</IRI>
+        <Literal>Rules that govern interaction between events that belong to the same maneuver.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Priority</IRI>
+        <Literal>overwrite : If a starting event has priority Overwrite, all events in running state, within the same scope (maneuver) as the starting event, should be issued a stop command (stop transition).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Priority</IRI>
+        <Literal>parallel : Execute in parallel to other events.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Priority</IRI>
+        <Literal>skip : If a starting event has priority Skip, then it will not be ran if there is any other event in the same scope (maneuver) in the running state.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RelativeDistanceCondition</IRI>
+        <Literal>The current relative distance of a triggering entity/entities to a reference entity is compared to a given value. The logical operator used for comparison is defined in the rule attribute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RelativeObjectPosition</IRI>
+        <Literal>Can have has_x, has_y, has_z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RelativeObjectPosition</IRI>
+        <Literal>Default: x = 0, y = 0 , z = 0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RelativeSpeedCondition</IRI>
+        <Literal>The current relative speed of a triggering entity/entities to a reference entity is compared to a given value. The logical operator used for the evaluation is defined by the rule attribute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RoadNetwork</IRI>
+        <Literal>The road network which provides the base layer (and road-relative coordinate systems) for all scenario elements is defined as a reference to a road network file. This reference is optional; in case it is not specified, an infinite non-inclined plane on level z=0 shall be assumed as base layer. Additionally and optionally, a visual 3D model file can be referenced and any number of signals can be specified.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Scenario</IRI>
+        <Literal>Top level container containing all scenario elements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ScenarioElements</IRI>
+        <Literal>Helper class for the overview of scenario elements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SimulationTimeCondition</IRI>
+        <Literal>Compares the simulation time to the specified value. The logical operator is defined by the rule attribute.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Story</IRI>
+        <Literal>Grouping of independent executable parts of a scenario. The name of a story must be unique within an OpenSCENARIO file.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Storyboard</IRI>
+        <Literal>Top container for the dynamic content of a scenario.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StoryboardElementStateCondition</IRI>
+        <Literal>Considered true if a referenced storyboard element has reached a given runtime state (standbyState, runningState, completeState) or if the referenced storyboard element undergoes a specific transition (startTransition, stopTransition, endTransition, skipTransition) at a discrete time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransitionDynamics</IRI>
+        <Literal>For different Actions like SpeedAction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TraveledDistanceCondition</IRI>
+        <Literal>Logical expression in condition becomes true after the triggering entity/entities have traveled the given distance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Triggers</IRI>
+        <Literal>A trigger is then defined as an association of condition groups. A trigger evaluates to true if at least one of the associated condition groups evaluates to true, otherwise it evaluates to false (OR operation).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vehicle</IRI>
+        <Literal>Used for vehicle assets. i.e car, van</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_act</IRI>
+        <Literal>Used to add Act individuals to Story individuals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_action</IRI>
+        <Literal>Used to add different Action individuals connection to an Event indvidiual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_asset</IRI>
+        <Literal>Used to define the asset of an Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_bounding_box</IRI>
+        <Literal>Used to add BoundingBox indvidual to a Bicycle, EgoVehicle, Pedestrian, Vehicle or Fog.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_condition</IRI>
+        <Literal>Used to add Conditions to a ConditionGroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_condition_edge</IRI>
+        <Literal>Used to add a ConditionEdge to different Conditions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_condition_group</IRI>
+        <Literal>Used to add ConditionGroups to different StartTriggers and StopTriggers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_condition_rule</IRI>
+        <Literal>Used to add a ConditionRule to the Conditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_condition_speed_value</IRI>
+        <Literal>for SpeedCondition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_entity</IRI>
+        <Literal>Used to add Entity individuals to a Scenario individual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_entity_ref</IRI>
+        <Literal>Used to set the entity reference of an Action, ManeuverGroup or a Position</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_environment</IRI>
+        <Literal>Used to add different Environment individuals connection to an EnvironmentAction indvidiual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_event</IRI>
+        <Literal>Used to add Event individuals to Maneuver individuals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_init</IRI>
+        <Literal>Used for a list of actions initially executed when the enclosing storyboard starts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_init</IRI>
+        <Literal>Used to add Init  individuals to Storyboard individuals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_init_action</IRI>
+        <Literal>Used for adding Action indviduals to an Init individual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_maneuver</IRI>
+        <Literal>Used to add Maneuver individuals to ManeuverGroup individuals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_maneuver_group</IRI>
+        <Literal>Used to add ManeuverGroup individuals to Act individuals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_maximumExecutionCount</IRI>
+        <Literal>The maximumExecutionCount setting specifies how many times an Event is supposed to run, where the number of runs is incremented by one each time the endTransition is reached.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_orientation</IRI>
+        <Literal>Used to set the Orientation of an Position</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_position</IRI>
+        <Literal>Used to set the Position of an Action</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_precipitation_type</IRI>
+        <Literal>Used to add a PrecipiationType individual to a Precipitiation individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_priority</IRI>
+        <Literal>Used to a priority individuals connections to an Event indvidiual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_priority</IRI>
+        <Literal>can be only &quot;overwrite&quot; , &quot;skip&quot; or &quot;parallel&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_relative_distance_type</IRI>
+        <Literal>Used to connect a RelativeDistanceType individual to a RelativeDistanceCondition individual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_relative_position_object_reference</IRI>
+        <Literal>Used to define an object reference to an Entity for a RelativeObjectPosition individual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_road_condition</IRI>
+        <Literal>Used to add a RoadCondition individual connection to an Environment indvidiual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_road_network</IRI>
+        <Literal>Used to add RoadNetwork individual to a Scenario individual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_start_trigger</IRI>
+        <Literal>Used to add StartTrigger indivdual property assertion to an Act or an Event individual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_stop_trigger</IRI>
+        <Literal>Used to add StopTrigger indivdual property assertion to an Act or a Story individual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_story</IRI>
+        <Literal>Used to add Story individuals to Storyboard individuals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_storyboard</IRI>
+        <Literal>Used to add Storyboard individuals to Scenario individuals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_storyboard_element_type</IRI>
+        <Literal>Not used, can be derived from code.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_target_reference</IRI>
+        <Literal>Used to set a target reference of a RelativeDistanceCondition individual. The target reference is an indvidual of the class Entities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_time_of_day</IRI>
+        <Literal>Used to add a TimeOfDay individual connection to an Environment indvidiual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_town</IRI>
+        <Literal>Used to assign a CARLA Town individual to a Scenario individual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_traveled_distance_value</IRI>
+        <Literal>For TraveledDistanceCondition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_weather</IRI>
+        <Literal>Used to add a Weather individual connection to an Environment indvidiual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#vehicle.diamondback.century</IRI>
+        <Literal>bicycle</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSCENARIO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OpenScenario.xsd">
+    <FileHeader description="indiv_Scenario" author="Stefani" revMajor="1" revMinor="0" date="2022-03-01T08:36:18.322427"/>
+    <ParameterDeclarations/>
+    <CatalogLocations/>
+    <RoadNetwork>
+        <LogicFile filepath="Town01"/>
+    </RoadNetwork>
+    <Entities>
+        <ScenarioObject name="indiv0Pedestrian">
+            <Pedestrian name="walker.pedestrian.0001" pedestrianCategory="pedestrian" model="walker.pedestrian.0001" mass="100.0">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="10.0" y="10.0" z="10.0"/>
+                    <Dimensions width="10.0" length="10.0" height="10.0"/>
+                </BoundingBox>
+                <Properties>
+                    <Property name="type" value="simulation"/>
+                </Properties>
+            </Pedestrian>
+        </ScenarioObject>
+        <ScenarioObject name="indiv1Pedestrian">
+            <Pedestrian name="walker.pedestrian.0002" pedestrianCategory="pedestrian" model="walker.pedestrian.0002" mass="100.0">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="10.0" y="10.0" z="10.0"/>
+                    <Dimensions width="10.0" length="10.0" height="10.0"/>
+                </BoundingBox>
+                <Properties>
+                    <Property name="type" value="simulation"/>
+                </Properties>
+            </Pedestrian>
+        </ScenarioObject>
+        <ScenarioObject name="indiv2Pedestrian">
+            <Pedestrian name="walker.pedestrian.0003" pedestrianCategory="pedestrian" model="walker.pedestrian.0003" mass="100.0">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="10.0" y="10.0" z="10.0"/>
+                    <Dimensions width="10.0" length="10.0" height="10.0"/>
+                </BoundingBox>
+                <Properties>
+                    <Property name="type" value="simulation"/>
+                </Properties>
+            </Pedestrian>
+        </ScenarioObject>
+        <ScenarioObject name="indiv3Pedestrian">
+            <Pedestrian name="walker.pedestrian.0004" pedestrianCategory="pedestrian" model="walker.pedestrian.0004" mass="100.0">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="10.0" y="10.0" z="10.0"/>
+                    <Dimensions width="10.0" length="10.0" height="10.0"/>
+                </BoundingBox>
+                <Properties>
+                    <Property name="type" value="simulation"/>
+                </Properties>
+            </Pedestrian>
+        </ScenarioObject>
+        <ScenarioObject name="indiv4Pedestrian">
+            <Pedestrian name="walker.pedestrian.0005" pedestrianCategory="pedestrian" model="walker.pedestrian.0005" mass="100.0">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="10.0" y="10.0" z="10.0"/>
+                    <Dimensions width="10.0" length="10.0" height="10.0"/>
+                </BoundingBox>
+                <Properties>
+                    <Property name="type" value="simulation"/>
+                </Properties>
+            </Pedestrian>
+        </ScenarioObject>
+        <ScenarioObject name="indiv5Pedestrian">
+            <Pedestrian name="walker.pedestrian.0006" pedestrianCategory="pedestrian" model="walker.pedestrian.0006" mass="100.0">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="10.0" y="10.0" z="10.0"/>
+                    <Dimensions width="10.0" length="10.0" height="10.0"/>
+                </BoundingBox>
+                <Properties>
+                    <Property name="type" value="simulation"/>
+                </Properties>
+            </Pedestrian>
+        </ScenarioObject>
+        <ScenarioObject name="indiv6Pedestrian">
+            <Pedestrian name="walker.pedestrian.0007" pedestrianCategory="pedestrian" model="walker.pedestrian.0007" mass="100.0">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="10.0" y="10.0" z="10.0"/>
+                    <Dimensions width="10.0" length="10.0" height="10.0"/>
+                </BoundingBox>
+                <Properties>
+                    <Property name="type" value="simulation"/>
+                </Properties>
+            </Pedestrian>
+        </ScenarioObject>
+        <ScenarioObject name="indiv7Pedestrian">
+            <Pedestrian name="walker.pedestrian.0008" pedestrianCategory="pedestrian" model="walker.pedestrian.0008" mass="100.0">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="10.0" y="10.0" z="10.0"/>
+                    <Dimensions width="10.0" length="10.0" height="10.0"/>
+                </BoundingBox>
+                <Properties>
+                    <Property name="type" value="simulation"/>
+                </Properties>
+            </Pedestrian>
+        </ScenarioObject>
+        <ScenarioObject name="indiv8Pedestrian">
+            <Pedestrian name="walker.pedestrian.0009" pedestrianCategory="pedestrian" model="walker.pedestrian.0009" mass="100.0">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="10.0" y="10.0" z="10.0"/>
+                    <Dimensions width="10.0" length="10.0" height="10.0"/>
+                </BoundingBox>
+                <Properties>
+                    <Property name="type" value="simulation"/>
+                </Properties>
+            </Pedestrian>
+        </ScenarioObject>
+        <ScenarioObject name="indiv9Pedestrian">
+            <Pedestrian name="walker.pedestrian.0010" pedestrianCategory="pedestrian" model="walker.pedestrian.0010" mass="100.0">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="10.0" y="10.0" z="10.0"/>
+                    <Dimensions width="10.0" length="10.0" height="10.0"/>
+                </BoundingBox>
+                <Properties>
+                    <Property name="type" value="simulation"/>
+                </Properties>
+            </Pedestrian>
+        </ScenarioObject>
+        <ScenarioObject name="ego_vehicle">
+            <Vehicle name="vehicle.tesla.model3" vehicleCategory="car">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="1.5" y="0.0" z="0.9"/>
+                    <Dimensions width="2.1" length="4.5" height="1.8"/>
+                </BoundingBox>
+                <Performance maxSpeed="69.0" maxDeceleration="200.0" maxAcceleration="10.0"/>
+                <Axles>
+                    <FrontAxle maxSteering="0.523598775598" wheelDiameter="0.8" trackWidth="1.68" positionX="2.98" positionZ="0.4"/>
+                    <RearAxle maxSteering="0.523598775598" wheelDiameter="0.8" trackWidth="1.68" positionX="0.0" positionZ="0.4"/>
+                </Axles>
+                <Properties>
+                    <Property name="type" value="ego_vehicle"/>
+                </Properties>
+            </Vehicle>
+        </ScenarioObject>
+    </Entities>
+    <Storyboard>
+        <Init>
+            <Actions>
+                <GlobalAction>
+                    <EnvironmentAction>
+                        <Environment name="def_environment">
+                            <TimeOfDay animation="false" dateTime="2022-07-01T13:30:30"/>
+                            <Weather cloudState="free">
+                                <Sun azimuth="0" intensity="0.8" elevation="1.3"/>
+                                <Fog visualRange="100">
+                                    <BoundingBox>
+                                        <Center x="10.0" y="10.0" z="10.0"/>
+                                        <Dimensions width="10.0" length="10.0" height="10.0"/>
+                                    </BoundingBox>
+                                </Fog>
+                                <Precipitation precipitationType="dry" intensity="1.0"/>
+                            </Weather>
+                            <RoadCondition frictionScaleFactor="1"/>
+                        </Environment>
+                    </EnvironmentAction>
+                </GlobalAction>
+                <Private entityRef="ego_vehicle">
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="3"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="0.0" offset="0.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <ControllerAction>
+                            <OverrideControllerValueAction>
+                                <Throttle active="false" value="0.0"/>
+                                <Brake active="false" value="0.0"/>
+                                <Clutch active="false" value="0.0"/>
+                                <ParkingBrake active="false" value="0.0"/>
+                                <SteeringWheel active="false" value="0.0"/>
+                                <Gear active="false" number="0.0"/>
+                            </OverrideControllerValueAction>
+                            <AssignControllerAction>
+                                <Controller name="Camera">
+                                    <ParameterDeclarations/>
+                                    <Properties>
+                                        <Property name="module" value="simple_vehicle_control"/>
+                                        <Property name="attach_camera" value="true"/>
+                                    </Properties>
+                                </Controller>
+                            </AssignControllerAction>
+                        </ControllerAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="indiv0Pedestrian">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="20.0" offset="-1.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="2"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="indiv1Pedestrian">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="24.0" offset="0.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="2"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="indiv2Pedestrian">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="28.0" offset="-1.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="2"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="indiv3Pedestrian">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="32.0" offset="0.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="2"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="indiv4Pedestrian">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="36.0" offset="-1.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="2"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="indiv5Pedestrian">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="40.0" offset="0.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="2"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="indiv6Pedestrian">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="44.0" offset="-1.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="2"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="indiv7Pedestrian">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="48.0" offset="0.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="2"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="indiv8Pedestrian">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="52.0" offset="-1.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="2"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="indiv9Pedestrian">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="56.0" offset="0.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="2"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                </Private>
+            </Actions>
+        </Init>
+        <Story name="indiv_Story">
+            <ParameterDeclarations/>
+            <Act name="indiv_Act">
+                <ManeuverGroup name="indiv0ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="indiv0Pedestrian"/>
+                    </Actors>
+                    <Maneuver name="indiv0Maneuver">
+                        <Event name="indiv0Event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_0_0SpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="8"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_zeroSimulationTimeCondition" delay="0" conditionEdge="rising">
+                                        <ByValueCondition>
+                                            <SimulationTimeCondition value="5" rule="greaterThan"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <ManeuverGroup name="indiv1ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="indiv1Pedestrian"/>
+                    </Actors>
+                    <Maneuver name="indiv1Maneuver">
+                        <Event name="indiv1Event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_0_1SpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="8"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_zeroSimulationTimeCondition" delay="0" conditionEdge="rising">
+                                        <ByValueCondition>
+                                            <SimulationTimeCondition value="5" rule="greaterThan"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <ManeuverGroup name="indiv2ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="indiv2Pedestrian"/>
+                    </Actors>
+                    <Maneuver name="indiv2Maneuver">
+                        <Event name="indiv2Event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_0_2SpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="8"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_zeroSimulationTimeCondition" delay="0" conditionEdge="rising">
+                                        <ByValueCondition>
+                                            <SimulationTimeCondition value="5" rule="greaterThan"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <ManeuverGroup name="indiv3ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="indiv3Pedestrian"/>
+                    </Actors>
+                    <Maneuver name="indiv3Maneuver">
+                        <Event name="indiv3Event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_0_3SpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="8"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_zeroSimulationTimeCondition" delay="0" conditionEdge="rising">
+                                        <ByValueCondition>
+                                            <SimulationTimeCondition value="5" rule="greaterThan"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <ManeuverGroup name="indiv4ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="indiv4Pedestrian"/>
+                    </Actors>
+                    <Maneuver name="indiv4Maneuver">
+                        <Event name="indiv4Event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_0_4SpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="8"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_zeroSimulationTimeCondition" delay="0" conditionEdge="rising">
+                                        <ByValueCondition>
+                                            <SimulationTimeCondition value="5" rule="greaterThan"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <ManeuverGroup name="indiv5ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="indiv5Pedestrian"/>
+                    </Actors>
+                    <Maneuver name="indiv5Maneuver">
+                        <Event name="indiv5Event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_0_5SpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="8"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_zeroSimulationTimeCondition" delay="0" conditionEdge="rising">
+                                        <ByValueCondition>
+                                            <SimulationTimeCondition value="5" rule="greaterThan"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <ManeuverGroup name="indiv6ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="indiv6Pedestrian"/>
+                    </Actors>
+                    <Maneuver name="indiv6Maneuver">
+                        <Event name="indiv6Event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_0_6SpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="8"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_zeroSimulationTimeCondition" delay="0" conditionEdge="rising">
+                                        <ByValueCondition>
+                                            <SimulationTimeCondition value="5" rule="greaterThan"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <ManeuverGroup name="indiv7ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="indiv7Pedestrian"/>
+                    </Actors>
+                    <Maneuver name="indiv7Maneuver">
+                        <Event name="indiv7Event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_0_7SpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="8"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_zeroSimulationTimeCondition" delay="0" conditionEdge="rising">
+                                        <ByValueCondition>
+                                            <SimulationTimeCondition value="5" rule="greaterThan"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <ManeuverGroup name="indiv8ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="indiv8Pedestrian"/>
+                    </Actors>
+                    <Maneuver name="indiv8Maneuver">
+                        <Event name="indiv8Event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_0_8SpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="8"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_zeroSimulationTimeCondition" delay="0" conditionEdge="rising">
+                                        <ByValueCondition>
+                                            <SimulationTimeCondition value="5" rule="greaterThan"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <ManeuverGroup name="indiv9ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="indiv9Pedestrian"/>
+                    </Actors>
+                    <Maneuver name="indiv9Maneuver">
+                        <Event name="indiv9Event" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="indiv_0_9SpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="8"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="indiv_zeroSimulationTimeCondition" delay="0" conditionEdge="rising">
+                                        <ByValueCondition>
+                                            <SimulationTimeCondition value="5" rule="greaterThan"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <StartTrigger>
+                    <ConditionGroup>
+                        <Condition name="indiv_zeroSimulationTimeCondition" delay="0" conditionEdge="rising">
+                            <ByValueCondition>
+                                <SimulationTimeCondition value="5" rule="greaterThan"/>
+                            </ByValueCondition>
+                        </Condition>
+                    </ConditionGroup>
+                </StartTrigger>
+                <StopTrigger>
+                    <ConditionGroup>
+                        <Condition name="indiv_30SimulationTimeCondition" delay="0" conditionEdge="rising">
+                            <ByValueCondition>
+                                <SimulationTimeCondition value="30" rule="greaterThan"/>
+                            </ByValueCondition>
+                        </Condition>
+                    </ConditionGroup>
+                </StopTrigger>
+            </Act>
+        </Story>
+        <StopTrigger/>
+    </Storyboard>
+</OpenSCENARIO>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSCENARIO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OpenScenario.xsd">
+    <FileHeader description="__Scenario" author="Stefani" revMajor="1" revMinor="0" date="2022-02-12T11:32:25.863658"/>
+    <ParameterDeclarations/>
+    <CatalogLocations/>
+    <RoadNetwork>
+        <LogicFile filepath="Town01"/>
+    </RoadNetwork>
+    <Entities>
+        <ScenarioObject name="ego_vehicle">
+            <Vehicle name="vehicle.tesla.model3" vehicleCategory="car">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="1.5" y="0.0" z="0.9"/>
+                    <Dimensions width="2.1" length="4.5" height="1.8"/>
+                </BoundingBox>
+                <Performance maxSpeed="69.0" maxDeceleration="200.0" maxAcceleration="10.0"/>
+                <Axles>
+                    <FrontAxle maxSteering="0.523598775598" wheelDiameter="0.8" trackWidth="1.68" positionX="2.98" positionZ="0.4"/>
+                    <RearAxle maxSteering="0.523598775598" wheelDiameter="0.8" trackWidth="1.68" positionX="0.0" positionZ="0.4"/>
+                </Axles>
+                <Properties>
+                    <Property name="type" value="ego_vehicle"/>
+                </Properties>
+            </Vehicle>
+        </ScenarioObject>
+        <ScenarioObject name="__pedestrianPedestrian">
+            <Pedestrian name="walker.pedestrian.0002" pedestrianCategory="pedestrian" model="walker.pedestrian.0002" mass="100.0">
+                <ParameterDeclarations/>
+                <BoundingBox>
+                    <Center x="10.0" y="10.0" z="10.0"/>
+                    <Dimensions width="10.0" length="10.0" height="10.0"/>
+                </BoundingBox>
+                <Properties>
+                    <Property name="type" value="simulation"/>
+                </Properties>
+            </Pedestrian>
+        </ScenarioObject>
+    </Entities>
+    <Storyboard>
+        <Init>
+            <Actions>
+                <GlobalAction>
+                    <EnvironmentAction>
+                        <Environment name="__Environment">
+                            <TimeOfDay animation="true" dateTime="2021-01-07T13:10:10"/>
+                            <Weather cloudState="free">
+                                <Sun azimuth="0" intensity="0.8" elevation="1.3"/>
+                                <Fog visualRange="10000">
+                                    <BoundingBox>
+                                        <Center x="10.0" y="10.0" z="10.0"/>
+                                        <Dimensions width="10.0" length="10.0" height="10.0"/>
+                                    </BoundingBox>
+                                </Fog>
+                                <Precipitation precipitationType="dry" intensity="1.0"/>
+                            </Weather>
+                            <RoadCondition frictionScaleFactor="1"/>
+                        </Environment>
+                    </EnvironmentAction>
+                </GlobalAction>
+                <Private entityRef="ego_vehicle">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="-1" s="0.0" offset="0.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <LongitudinalAction>
+                            <SpeedAction>
+                                <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                <SpeedActionTarget>
+                                    <AbsoluteTargetSpeed value="5"/>
+                                </SpeedActionTarget>
+                            </SpeedAction>
+                        </LongitudinalAction>
+                    </PrivateAction>
+                    <PrivateAction>
+                        <ControllerAction>
+                            <OverrideControllerValueAction>
+                                <Throttle active="false" value="0.0"/>
+                                <Brake active="false" value="0.0"/>
+                                <Clutch active="false" value="0.0"/>
+                                <ParkingBrake active="false" value="0.0"/>
+                                <SteeringWheel active="false" value="0.0"/>
+                                <Gear active="false" number="0.0"/>
+                            </OverrideControllerValueAction>
+                            <AssignControllerAction>
+                                <Controller name="Camera">
+                                    <ParameterDeclarations/>
+                                    <Properties>
+                                        <Property name="module" value="simple_vehicle_control"/>
+                                        <Property name="attach_camera" value="true"/>
+                                    </Properties>
+                                </Controller>
+                            </AssignControllerAction>
+                        </ControllerAction>
+                    </PrivateAction>
+                </Private>
+                <Private entityRef="__pedestrianPedestrian">
+                    <PrivateAction>
+                        <TeleportAction>
+                            <Position>
+                                <LanePosition roadId="1" laneId="2" s="40.0" offset="2.0"/>
+                            </Position>
+                        </TeleportAction>
+                    </PrivateAction>
+                </Private>
+            </Actions>
+        </Init>
+        <Story name="__Story">
+            <ParameterDeclarations/>
+            <Act name="__1Act">
+                <ManeuverGroup name="__ss1ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="__pedestrianPedestrian"/>
+                    </Actors>
+                    <Maneuver name="__ss1Maneuver">
+                        <Event name="__bbq_distanceEvent" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="__ss1TeleportActionRelative">
+                                <PrivateAction>
+                                    <TeleportAction>
+                                        <Position>
+                                            <RelativeObjectPosition entityRef="__pedestrianPedestrian" dx="0.0" dy="0.0" dz="0.0">
+                                                <Orientation h="2.0" p="0.0" r="0.0"/>
+                                            </RelativeObjectPosition>
+                                        </Position>
+                                    </TeleportAction>
+                                </PrivateAction>
+                            </Action>
+                            <Action name="__pedestrianSpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="6"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="__RelativeDistanceCondtion" delay="0" conditionEdge="rising">
+                                        <ByEntityCondition>
+                                            <TriggeringEntities triggeringEntitiesRule="any">
+                                                <EntityRef entityRef="__pedestrianPedestrian"/>
+                                            </TriggeringEntities>
+                                            <EntityCondition>
+                                                <RelativeDistanceCondition value="16" freespace="false" entityRef="ego_vehicle" rule="lessThan" relativeDistanceType="cartesianDistance"/>
+                                            </EntityCondition>
+                                        </ByEntityCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <ManeuverGroup name="__ManeuverGroup" maximumExecutionCount="1">
+                    <Actors selectTriggeringEntities="false">
+                        <EntityRef entityRef="ego_vehicle"/>
+                    </Actors>
+                    <Maneuver name="__Maneuver">
+                        <Event name="__KeepLongerEvent" priority="overwrite" maximumExecutionCount="1">
+                            <Action name="__longerSpeedAction">
+                                <PrivateAction>
+                                    <LongitudinalAction>
+                                        <SpeedAction>
+                                            <SpeedActionDynamics dynamicsShape="step" value="15.0" dynamicsDimension="distance"/>
+                                            <SpeedActionTarget>
+                                                <AbsoluteTargetSpeed value="5"/>
+                                            </SpeedActionTarget>
+                                        </SpeedAction>
+                                    </LongitudinalAction>
+                                </PrivateAction>
+                            </Action>
+                            <StartTrigger>
+                                <ConditionGroup>
+                                    <Condition name="__speedchangeStoryboardElementStateCondition" delay="1" conditionEdge="none">
+                                        <ByValueCondition>
+                                            <StoryboardElementStateCondition storyboardElementType="event" storyboardElementRef="__bbq_distanceEvent" state="completeState"/>
+                                        </ByValueCondition>
+                                    </Condition>
+                                </ConditionGroup>
+                            </StartTrigger>
+                        </Event>
+                    </Maneuver>
+                </ManeuverGroup>
+                <StartTrigger>
+                    <ConditionGroup>
+                        <Condition name="__zeroSimulationTimeCondition" delay="0" conditionEdge="rising">
+                            <ByValueCondition>
+                                <SimulationTimeCondition value="0" rule="greaterThan"/>
+                            </ByValueCondition>
+                        </Condition>
+                    </ConditionGroup>
+                </StartTrigger>
+                <StopTrigger>
+                    <ConditionGroup>
+                        <Condition name="__30SimulationTimeCondition" delay="0" conditionEdge="rising">
+                            <ByValueCondition>
+                                <SimulationTimeCondition value="30" rule="greaterThan"/>
+                            </ByValueCondition>
+                        </Condition>
+                    </ConditionGroup>
+                </StopTrigger>
+            </Act>
+        </Story>
+        <StopTrigger/>
+    </Storyboard>
+</OpenSCENARIO>
