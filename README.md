@@ -96,7 +96,7 @@ This was one of the approaches that we followed, but since we came to problems w
 Another approach was also proposed, but was conducted on Windows, which caused problems within our Linux build. However, the approach was documented and can be seen in the [Steps_add_animals](https://github.com/daniel-bogdoll/corner_case_ontology/blob/main/Steps_add_animals.pdf) file in this repository. This method was used to specially add animals, which behave like a pedestrian inside CARLA.
 
 ## Citation
-If you find this code useful for your research, please cite our paper:
+If you find this code useful for your research, please cite the thesis:
 ```
 @mastersthesis{Guneshka_Ontology_2022_BA,
   author    = {Guneshka, Stefani},
