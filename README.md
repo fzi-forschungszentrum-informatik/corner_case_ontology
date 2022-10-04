@@ -1,6 +1,6 @@
 # Ontology-based corner case scenario simulation for autonomous driving
 
-Here, an approach for the generation of corner case scenarios within CARLA based on ontologies was created. With this repository you will be able to describe a scenario for autonomous driving, using the provided template ontology, also called master ontology. Once a scenario is described, it can be turned into an OpenSCENARIO file with the help of the Onto2OpenSCENARIOConverter.py, which can be directly executed within [CARLA ScenarioRunner](https://carla-scenariorunner.readthedocs.io/en/latest/). 
+This repository provides the code for the Bachelor thesis [Ontology-based corner case scenario simulation for autonomous driving](https://publikationen.bibliothek.kit.edu/1000144811) by Stefani Guneshka, supervised by Daniel Bogdoll. Here, an approach for the generation of corner case scenarios within CARLA based on ontologies was created. With this repository you will be able to describe a scenario for autonomous driving, using the provided template ontology, also called master ontology. Once a scenario is described, it can be turned into an OpenSCENARIO file with the help of the Onto2OpenSCENARIOConverter.py, which can be directly executed within [CARLA ScenarioRunner](https://carla-scenariorunner.readthedocs.io/en/latest/). 
 
 ## Structure:
 ```diff
@@ -93,4 +93,16 @@ Once this is done and you can import the CARLA project without problems, you can
 ![image](https://user-images.githubusercontent.com/36483060/163964135-6dacb509-20d7-457b-876e-17646eeed7d1.png)
 
 This was one of the approaches that we followed, but since we came to problems with installing and opening the project within UnrealEngine, this was not possible. 
-Another approach was also proposed, but was conducted on Windows, which caused problems within our Linux build. However, the approach was documented and can be seen in the [Steps_add_animals](https://github.com/daniel-bogdoll/corner_case_ontology/blob/main/Steps_add_animals.pdf) file in this repository. This method was used to specially add animals, which behave like a pedestrian inside CARLA. 
+Another approach was also proposed, but was conducted on Windows, which caused problems within our Linux build. However, the approach was documented and can be seen in the [Steps_add_animals](https://github.com/daniel-bogdoll/corner_case_ontology/blob/main/Steps_add_animals.pdf) file in this repository. This method was used to specially add animals, which behave like a pedestrian inside CARLA.
+
+## Citation
+If you find this code useful for your research, please cite our paper:
+```
+@mastersthesis{Guneshka_Ontology_2022_BA,
+  author    = {Guneshka, Stefani},
+  title     = {{Ontology-based Corner Case Scenario Simulation for Autonomous Driving}},
+  school    = {{Karlsruhe Institute of Technology (KIT)}},
+  year      = {2022},
+  type      = {Bachelor Thesis}
+}
+```
